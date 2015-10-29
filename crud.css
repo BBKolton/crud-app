@@ -1,0 +1,37 @@
+#logo {
+	height: 50px;
+	padding: 0px;
+	padding-right: 10px;
+}
+
+.navbar {
+	font-weight: bold;
+}
+
+#product {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#new-review form *{
+	margin-top: 10px;
+}
+
+.subtitle {
+	font-size: 10px;
+}
+
+.review {
+	background-color: #eeeeee;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+span {
+	cursor: pointer;
+}
+
+#average {
+	display: inline;
+}

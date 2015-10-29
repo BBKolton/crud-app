@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=2'>
+	<meta name='description' content='A basic CRUD app'>
+	<meta name='author' content='Bryce Kolton bbkolton'>
+	<link href="bootstrap.css" rel="stylesheet">
+	<link href='raty.css' rel='stylesheet'>
+	<!--<link href='bootstrap-theme.css' rel='stylesheet'>-->	
+ 	<link href='crud.css' rel='stylesheet' />
+	<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+	<script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src='raty.js'></script>
+	<script src='crud.js'></script>
+	<title>SHamazon: (New) Galaxy</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="navbar-brand" src='img/logo.png' id='logo' />
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="">Browse</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="../navbar/">Login</a></li>
+					<li><a href="../navbar-fixed-top/">Cart</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+
+	<div class='container'>
+		<div class='row'>
+			<div class='col-xs-12 col-sm-4'>
+				<h2>New: Galaxy</h2>
+				<p>Price: A lot of people thinking it was a very bad move</p>
+				<img src='img/universe.jpg' id='product'/>
+				<p>Quantity 
+					<select>
+						<option value='1'>1</option>
+						<option value='2'>2</option>
+						<option value='3'>3</option>
+						<option value='4'>4</option>
+					</select>
+					<input type='submit' class='btn btn-submit' value='Add to Cart'/>
+					<div id='average'></div>
+				</p>
+				<p><b>Description:</b>Yes, that's right. For the low low price of many Hitchiker's Guide to the Galaxy references, you too can own your very own galaxy! Coalesced through many tens of millions of years (whatever those are), we ensure each and every galaxy comes brand new and ripe for the sculpting</p>
+				<p class='subtitle'><i>Manufacturer not responsible for large black holes, supernovae, or proliferation of life</i></p>
+			</div>
+			<div class='col-xs-12 col-sm-8'>
+				<h3>Reviews</h3>
+				<div id='reviews'>
+					<p>Getting Reviews...</p>
+				</div>
+				<button type='button' id='new-button' class='btn btn-info'>Write a New Review </button>
+				<div id='new-review' class='hidden'>
+					<form>
+						<input class='form form-control' type='text' placeholder='Title your Review' id='title' />
+						<textarea class='form form-control' placeholder='Type your Review' id='text'></textarea>
+						<p>Your Score: <div id='review-rating'></div></p>
+						<button type='button' id='submit-review' class='btn btn-info'>Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
